@@ -1,2 +1,41 @@
-//Product Cards Styles
-//Each card should take up 30% of the width of the browser window.
+/*-----Product Cards Styles-----*/
+/*Notice that the text for the description in the image is justified.*/
+/*The text for the product specification details and pricing details is bold.*/
+/*The availability element extends the full width of the card, with a dark grey background and yellow text.*/
+
+
+
+/*Each card should take up 30% of the width of the browser window.*/
+body {
+	width: 90%;
+	margin: 0 auto;
+}
+div#productList {
+	width: 100%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+article {
+	display: block;
+	max-width: 30%;
+	margin: 1%;
+/*The entire card has a solid 1px border that is lightblue.*/
+	border: 1px solid lightblue;
+}
+img {
+	display: block;
+	width: 80%;
+/*The title and product image are centered.*/
+	margin: auto;
+}
+
+/*The card title has a dotted 1px border that is lightgray.*/
+header.productTitle h2 {
+	border: 1px dotted lightgray;
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0;
+}
