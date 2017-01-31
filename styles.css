@@ -1,9 +1,4 @@
 /*-----Product Cards Styles-----*/
-/*Notice that the text for the description in the image is justified.*/
-/*The text for the product specification details and pricing details is bold.*/
-/*The availability element extends the full width of the card, with a dark grey background and yellow text.*/
-
-
 
 /*Each card should take up 30% of the width of the browser window.*/
 body {
@@ -28,6 +23,8 @@ img {
 	width: 80%;
 /*The title and product image are centered.*/
 	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 /*The card title has a dotted 1px border that is lightgray.*/
@@ -39,3 +36,37 @@ header.productTitle h2 {
 	padding-bottom: 20px;
 	margin: 0;
 }
+/*Notice that the text for the description in the image is justified.*/
+p#productD {
+	margin-left: 15px;
+	margin-right: 15px;
+	text-align: justify;
+}
+/*The text for the product specification details and pricing details is bold.*/
+#specs,
+#pricing {
+	font-weight: bold;
+	margin-left: 20px;
+}
+#specs span,
+#pricing span {
+	margin-left: 10px;
+}
+#specValidity {
+	font-weight: normal;
+	margin-left: -18px;
+	font-size: .7rem;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+#availability {
+	margin-bottom: 10px;
+	background-color: gray;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	color: yellow;
+}
+
+/*The availability element extends the full width of the card, with a dark grey background and yellow text.*/
