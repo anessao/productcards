@@ -5,7 +5,7 @@ body {
 	width: 90%;
 	margin: 0 auto;
 }
-div#productList {
+div.productList {
 	width: 100%;
 	display: inline-flex;
 	flex-wrap: wrap;
@@ -37,22 +37,28 @@ header.productTitle h2 {
 	margin: 0;
 }
 /*Notice that the text for the description in the image is justified.*/
-p#productD {
+p.productD {
 	margin-left: 15px;
 	margin-right: 15px;
 	text-align: justify;
 }
 /*The text for the product specification details and pricing details is bold.*/
-#specs,
-#pricing {
+.specs,
+.pricing {
 	font-weight: bold;
 	margin-left: 20px;
 }
-#specs span,
-#pricing span {
+.specs span,
+.pricing span {
 	margin-left: 10px;
 }
-#specValidity {
+.specs header,
+.pricing header {
+	font-weight: normal;
+	font-size: 1.3rem;
+}
+
+.specValidity {
 	font-weight: normal;
 	margin-left: -18px;
 	font-size: .7rem;
@@ -60,7 +66,10 @@ p#productD {
 	padding-bottom: 5px;
 
 }
-#availability {
+
+/*The availability element extends the full width of the card, with a dark grey background and yellow text.*/
+
+.availability {
 	margin-bottom: 10px;
 	background-color: gray;
 	padding-top: 10px;
@@ -68,5 +77,3 @@ p#productD {
 	padding-left: 5px;
 	color: yellow;
 }
-
-/*The availability element extends the full width of the card, with a dark grey background and yellow text.*/
