@@ -3,6 +3,7 @@
 /*Each card should take up 30% of the width of the browser window.*/
 body {
 	width: 90%;
+	min-width: 1000px;
 	margin: 0 auto;
 }
 div.productList {
@@ -77,3 +78,25 @@ p.productD {
 	padding-left: 5px;
 	color: yellow;
 }
+
+/*SO THE PRODUCT CARDS DON'T DISPLAY SO THIN*/
+@media (max-width: 1000px){
+	div.productList {
+	width: 100%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+	article {
+	display: block;
+	max-width: 40%;
+	margin: 1%;
+}
+}
+
+
+
+
+
+
